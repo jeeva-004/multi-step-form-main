@@ -5,7 +5,7 @@
     border: none;
 }
 
-html{
+html {
     font-size: 20px;
 }
 
@@ -52,7 +52,7 @@ body {
     gap: 20px;
 }
 
-.step-options .number{
+.step-options .number {
     width: 30px;
     height: 30px;
     display: flex;
@@ -67,19 +67,19 @@ body {
     cursor: pointer;
 }
 
-.step-options h5{
+.step-options h5 {
     color: #fff;
     text-transform: uppercase;
     font-size: .8rem;
 }
 
-.step-detail span{
+.step-detail span {
     color: hsla(233, 10%, 67%, 0.8);
     text-transform: uppercase;
     font-size: .6rem;
 }
 
-.current{
+.current {
     color: black !important;
     background-color: hsl(228, 100%, 84%) !important;
 }
@@ -88,85 +88,111 @@ body {
     width: 60%;
 }
 
-.blue-color{
-    color: hsla(213, 96%, 18%,1);
+.blue-color {
+    color: hsla(213, 96%, 18%, 1);
 }
 
-.gray-color{
+.gray-color {
     color: hsl(231, 11%, 63%);
 }
 
-.para{
+.para {
     font-size: .8rem;
     margin: 10px 0 35px;
 }
 
-@media screen and (max-width:768px){
-    .container{
+.btn-group {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px;
+}
+
+.back-btn {
+    cursor: pointer;
+    color: hsl(231, 11%, 63%);
+}
+
+.next-btn {
+    padding: 8px 20px;
+    background-color: hsla(213, 96%, 18%);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .container {
         width: 90%;
         margin: 20px 0 !important;
         gap: 50px;
     }
 
-    .side-bar{
+    .side-bar {
         flex: 2;
     }
 
-    .steps{
+    .steps {
         width: 60%;
     }
 
-    .step-options .number{
-    width: 25px;
-    height: 25px;
-    font-size: .6rem;
+    .step-options .number {
+        width: 25px;
+        height: 25px;
+        font-size: .6rem;
+    }
+
+    .step-options h5 {
+        font-size: .6rem;
+    }
+
+    .step-detail span {
+        font-size: .6rem;
+    }
 }
 
-.step-options h5{
-    font-size: .6rem;
-}
+@media screen and (320px <=width <=425px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 !important;
+    }
 
-.step-detail span{
-    font-size: .6rem;
-}
-}
+    .side-bar {
+        padding: 0;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url("/assets/images/bg-sidebar-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+        padding: 40px 0 120px;
+        position: relative;
+    }
 
-@media screen and (320px <= width <= 425px){
-.container{
-    width: 100%;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 !important;
-}
-.side-bar{
-    padding: 0;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url("/assets/images/bg-sidebar-mobile.svg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 0;
-    padding: 40px 0 120px;
-    position: relative;
-}
+    .step-detail {
+        display: none;
+    }
 
-.step-detail{
-    display: none;
-}
+    .step-options .number {
+        width: 30px;
+        height: 30px;
+        font-size: .6rem;
+    }
 
-.step-options .number{
-    width: 30px;
-    height: 30px;
-    font-size: .6rem;
-}
+    .steps {
+        width: 90%;
+        position: absolute;
+        top: 120px;
+        border-radius: 8px;
+        padding: 20px;
+        align-self: center;
+        background-color: #fff;
+    }
 
-.steps{
-width: 90%;
-position: absolute;
-top: 120px;
-border-radius: 8px;
-padding: 20px;
-align-self: center;
-background-color: #fff;
-}
+    .btn-group {
+        width: 100%;
+    }
 }

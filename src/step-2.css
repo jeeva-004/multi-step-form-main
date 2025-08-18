@@ -13,6 +13,8 @@
     width: 30%;
     border: 1px solid hsla(231, 11%, 63%,.5);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -28,6 +30,8 @@
 }
 
 .plan img{
+    width: 45px;
+    height: 45px;
     margin-bottom: 40px;
 }
 
@@ -80,26 +84,6 @@
     margin: 40px 0 60px;
 }
 
-.btn-group{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 30px;
-}
-
-.back-btn{
-    cursor: pointer;
-    color: hsla(231, 11%, 63%,.8);
-}
-
-.next-btn{
-    padding: 8px 20px;
-    background-color: hsla(213, 96%, 18%);
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 500;
-    cursor: pointer;
-}
 
 .selected-outline{
     border: 1px solid hsl(243, 100%, 62%);
@@ -132,7 +116,7 @@
 /*year plan*/
 
 .two-free{
-    /* display: none; */
+    display: none;
     color: hsl(213, 96%, 18%);
     font-size: .6rem;
     margin: 10px 0 0;
@@ -144,6 +128,13 @@
     }
     .plan{
         width: 90%;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
         align-self: center;
+    }
+
+    .plan img{
+        margin-bottom: 10px !important;
     }
 }

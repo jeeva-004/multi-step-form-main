@@ -1,0 +1,16 @@
+.plan-detail{
+    height: 350px;
+    border: 1px solid;
+}
+
+.step-5{
+    display: none;
+}
+
+.confirm-btn{   
+    padding: 8px 20px;
+    background-color: hsl(243, 100%, 62%);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;}

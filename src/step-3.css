@@ -1,0 +1,83 @@
+.step-3{
+    padding-top: 20px;
+}
+
+.add-on{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px !important;
+}
+
+.add-on .adds{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 1px hsla(231, 11%, 63%,.5),
+    -1px -1px 1px hsla(231, 11%, 63%,.5);
+    border-radius: 10px;
+}
+
+.border-blue{
+  border: 1px solid hsla(243,100%,62%,.8) !important;
+}
+
+.storage{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.storage h5{
+  color: hsla(213, 96%, 18%,.9);
+  font-size: .8rem;
+}
+
+.storage p{
+  color: hsla(231, 11%, 63%,.9);
+  font-size: .7rem;
+}
+
+.storage-plan{
+  color: hsl(243,100%,62%);
+  font-size: .7rem;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px; height: 18px;
+  border: 1px solid hsla(231, 11%, 63%,.7);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: hsl(243,100%,62%);
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 2px; top: -1px;
+}
+
+.btn-group{
+  margin: 100px 0 10px;
+}
+
+@media screen and (325px <= width <= 425px){
+  .add-on .adds{
+    width: 100%;
+  }
+}
