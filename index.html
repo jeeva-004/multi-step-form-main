@@ -12,6 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/style.css">
   <link rel="stylesheet" href="./src/step-1.css">
+  <script src="script/index.js" defer></script>
   <title>Multi-step form</title>
 </head>
 
@@ -58,15 +59,18 @@
         <form action="./step-2.html">
           <fieldset>
             <label for="name">Name</label>
-            <input type="text" placeholder="e.g. Stephen King">
+            <div class="error"></div>
+            <input type="text" id="name" placeholder="e.g. Stephen King">
           </fieldset>
           <fieldset>
             <label for="email">Email Address</label>
+            <div class="error"></div>
             <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
           </fieldset>
           <fieldset>
             <label for="phone">Phone Number</label>
-            <input type="number" placeholder="e.g. +1 234 567 890">
+            <div class="error"></div>
+            <input type="number" id="phone" placeholder="e.g. +1 234 567 890">
           </fieldset>
 
           <a href="/step-2.html"><button>Next Step</button></a>

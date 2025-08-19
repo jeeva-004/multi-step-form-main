@@ -39,6 +39,20 @@
     cursor: pointer;
 }
 
+.error{
+    color: hsl(354, 84%, 57%);
+    font-size: .7rem;
+    text-align: end;
+}
+
+fieldset .border-error{
+    border: 1px solid hsl(354, 84%, 57%);
+}
+
+fieldset .border-success{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
 @media screen and (320px <= width <= 425px){
 .step-1 h2{
     margin: 0;
