@@ -19,8 +19,10 @@ function validateInput() {
         error(nameInput, 'This field is required!');
         status = false;
     }
-    else
+    else{
         success(nameInput);
+        nameInput.value = nameVal;
+    }
 
     if (emailVal == '') {
         error(emailInput, 'This field is required!');
@@ -32,8 +34,10 @@ function validateInput() {
         status = false;
     }
 
-    else
+    else{
+        emailInput.value = emailVal;
         success(emailInput);
+    }
 
     if (phoneVal == '') {
         error(phoneInput, 'This field is required!');
@@ -45,8 +49,10 @@ function validateInput() {
         status = false;
     }
 
-    else
-        success(emailInput);
+    else{
+        phoneInput.value = phoneVal;
+        success(phoneInput);
+    }
 
 
     return status;
