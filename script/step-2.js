@@ -1,4 +1,5 @@
 const plansAll = document.querySelectorAll('.plan');
+const allSpan = document.querySelector('.plans').querySelectorAll('span');
 const toggleBtn = document.querySelector('.toggle');
 let circle_ = toggleBtn.querySelector('.circle');
 const paraAll = document.querySelectorAll('.two-free');
@@ -23,12 +24,7 @@ toggleBtn.addEventListener('click', () => {
         circle_.classList.add('just-end');
         month.classList.remove('active');
         year.classList.add('active');
-        paraAll.forEach(para => para.style.display = 'block');
-        // displayMoney(yearVal);
-        for (let i = 0; i <= plansAll.length; i++) {
-            let currentEl = plansAll[i].querySelector('span');
-            currentEl.textContent = yearVal[i];
-        }
+        addVal(yearVal, 'block');
     }
 
     else {
@@ -36,17 +32,17 @@ toggleBtn.addEventListener('click', () => {
         circle_.classList.add('just-start');
         month.classList.add('active');
         year.classList.remove('active');
-        paraAll.forEach(para => para.style.display = 'none');
-        // displayMoney(monthVal);
-        for (let i = 0; i <= plansAll.length; i++) {
-            let currentEl = plansAll[i].querySelector('span');
-            currentEl.textContent = monthVal[i];
-        }
+        addVal(monthVal, 'none');
     }
 
     toggled = !toggled;
 });
 
-// function displayMoney(val) {
-
-// }
+function addVal(Val, str) {
+    paraAll.forEach(para => para.style.display = `${str}`);
+    let i = 0;
+    allSpan.forEach(span => {
+        span.textContent = Val[i];
+        i++;
+    })
+}
