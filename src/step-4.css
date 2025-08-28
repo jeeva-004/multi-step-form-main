@@ -1,27 +1,94 @@
-.plan-detail{
-    height: 350px;
-    border: 1px solid;
-}
-
-.step-5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   align-items: center;
-   text-align: center;
-    height: 500px;
-}
-
-.step-4{
-    display: none;
+.step-4 {
+    display: block;
     margin-bottom: 15px;
 }
 
+.plan-detail {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
 
-.confirm-btn{   
+.all-services{
+    margin: 50px 0 30px;
+}
+
+.services{
+    margin: 20px 0;
+}
+
+.services, .total, .month-or-year{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services small{
+    color: hsl(213, 96%, 18%);
+    font-size: .8rem;
+}
+
+.month-or-year a, .services span, .total span{
+    color: hsl(231, 11%, 63%);
+    font-size: .88rem;
+}
+
+.total-value{
+    color: hsl(243, 100%, 62%)!important;
+    font-size: .8rem;
+    font-weight: bolder;
+}
+
+.plan-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.month-value{
+    color: hsl(213, 96%, 18%);
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+.step-5 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+}
+
+.step-5 p {
+    padding: 0 30px;
+}
+
+.step-5 img {
+    margin-bottom: 20px;
+}
+
+.btn-group{
+    margin: 60px 0 15px;
+}
+
+.confirm-btn {
     padding: 8px 20px;
     background-color: hsl(243, 100%, 62%);
     color: #fff;
     border-radius: 10px;
     font-weight: 500;
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+@media screen and (325px <= width <= 425px) {
+    .step-5 p {
+        padding: 0 5px;
+    }
+
+    .plan-detail{
+        width: 100%;
+    }
+}
