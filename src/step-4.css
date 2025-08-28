@@ -4,8 +4,19 @@
 }
 
 .step-5{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+    height: 500px;
 }
+
+.step-4{
+    display: none;
+    margin-bottom: 15px;
+}
+
 
 .confirm-btn{   
     padding: 8px 20px;

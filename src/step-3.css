@@ -20,8 +20,8 @@
     border-radius: 10px;
 }
 
-.border-blue{
-  border: 1px solid hsla(243,100%,62%,.8) !important;
+.adds.border-blue{
+  border: 1px solid hsla(243,100%,62%,.8);
 }
 
 .storage{
@@ -46,7 +46,7 @@
   font-size: .7rem;
 }
 
-.storage-plan{
+.adds span{
   color: hsl(243,100%,62%);
   font-size: .7rem;
 }

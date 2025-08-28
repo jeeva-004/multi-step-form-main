@@ -111,6 +111,7 @@ body {
 .back-btn {
     cursor: pointer;
     color: hsl(231, 11%, 63%);
+    background-color: transparent;
 }
 
 .next-btn {
@@ -121,6 +122,7 @@ body {
     font-weight: 500;
     cursor: pointer;
 }
+
 
 @media screen and (max-width:768px) {
     .container {
