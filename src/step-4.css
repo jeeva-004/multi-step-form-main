@@ -11,6 +11,14 @@
     margin: 40px 0 0;
 }
 
+.mon-or-yea{
+    display: flex;
+    gap: 5px;
+}
+.mon-or-yea span{
+    font-weight: bold;
+}
+
 .all-services{
     margin: 50px 0 30px;
 }

@@ -12,6 +12,9 @@ allPlan.forEach(plan => {
     plan.addEventListener('click', () => {
         allPlan.forEach(plan => plan.classList.remove('selected-outline'));
         plan.classList.add('selected-outline');
+        allPlan.forEach(plan => updateValue(plan));
+        localStorage.setItem('details',JSON.stringify(data));
+
     })
 });
 
@@ -28,9 +31,7 @@ toggleBtn.addEventListener('click', () => {
         month.classList.remove('active');
         year.classList.add('active');
         addVal(yearVal, 'block');
-        allPlan.forEach(plan => updateValue(plan));
         localStorage.setItem('plan', 'year');
-        localStorage.setItem('details', data);
     }
 
     else {
@@ -38,10 +39,8 @@ toggleBtn.addEventListener('click', () => {
         circle_.classList.add('just-start');
         month.classList.add('active');
         year.classList.remove('active');
-        allPlan.forEach(plan => updateValue(plan));
         addVal(monthVal, 'none');
         localStorage.setItem('plan', 'month');
-        localStorage.setItem('details', data);
     }
 
     toggled = !toggled;
@@ -60,7 +59,6 @@ function updateValue(plan) {
     if (plan.classList.contains('selected-outline')) {
         data[0] = plan.querySelector('h6').textContent;
         data[1] = plan.querySelector('span').textContent;
-        data[2] = plan.querySelector('span').textContent.includes('mo') ? 'Monthly' : 'Yearly';
     }
 }
 
