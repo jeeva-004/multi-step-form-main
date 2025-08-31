@@ -39,7 +39,7 @@ body {
     align-items: start;
     gap: 20px;
     padding: 20px;
-    background: url("/assets/images/bg-sidebar-desktop.svg");
+    background: url("../assets/images/bg-sidebar-desktop.svg");
     background-size: cover;
     background-position: center;
     border-radius: 8px;
