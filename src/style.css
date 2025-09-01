@@ -154,7 +154,7 @@ body {
     }
 }
 
-@media screen and (320px <=width <=425px) {
+@media screen and (320px <= width <=425px) {
     .container {
         width: 100%;
         flex-direction: column;
@@ -166,7 +166,7 @@ body {
         padding: 0;
         flex-direction: row;
         justify-content: center;
-        background-image: url("/assets/images/bg-sidebar-mobile.svg");
+        background-image: url("../assets/images/bg-sidebar-mobile.svg");
         background-size: cover;
         background-position: center;
         border-radius: 0;
